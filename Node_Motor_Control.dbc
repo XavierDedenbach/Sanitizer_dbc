@@ -1,0 +1,90 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+
+
+BO_ 2147484802 TPDO4_Blower: 1 Vector__XXX
+ SG_ OnboardHandSprayEnable : 0|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484546 TPDO3_Blower: 2 Vector__XXX
+ SG_ BlowerMotorTemp : 0|16@1- (1,0) [-40|200] "degC" Vector__XXX
+
+BO_ 2147484290 TPDO2_Blower: 8 Vector__XXX
+ SG_ BlowerMotorSpeedMeasured : 32|32@1- (1,0) [0|4000] "RPM" Vector__XXX
+ SG_ BlowerMotorCurrent : 0|32@1- (1,0) [0|80] "Amps" Vector__XXX
+
+BO_ 2147484034 TPDO1_Blower: 8 Vector__XXX
+ SG_ FluidPressure : 32|32@1- (1,0) [0|35] "PSI" Vector__XXX
+ SG_ AirPressure : 0|32@1- (1,0) [0|35] "PSI" Vector__XXX
+
+BO_ 2147484930 RPDO4_Blower: 1 Vector__XXX
+ SG_ HandSprayEnable : 2|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ RightSprayEnable : 1|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ LeftSprayEnable : 0|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484162 RPDO1_Blower: 4 Vector__XXX
+ SG_ BlowerMotorSpeedCommand : 0|32@1- (0.285,0) [-3500|3500] "RPM" Vector__XXX
+
+BO_ 2147484801 TPDO4_Traction: 1 Vector__XXX
+ SG_ BMSEnable : 0|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484545 TPDO3_Traction: 8 Vector__XXX
+ SG_ MotorControllerFaultFlag : 48|16@1- (1,0) [0|510] "" Vector__XXX
+ SG_ BatteryCurrent : 32|16@1- (1,0) [0|200] "Amps" Vector__XXX
+ SG_ BatterySOC : 16|16@1- (1,0) [0|100] "%" Vector__XXX
+ SG_ SystemStatus : 0|16@1- (1,0) [0|3] "" Vector__XXX
+
+BO_ 2147484289 TPDO2_Traction: 8 Vector__XXX
+ SG_ RightMotorSpeedMeasured : 32|32@1- (1,0) [-360|360] "RPM" Vector__XXX
+ SG_ LeftMotorSpeedMeasured : 0|32@1- (1,0) [-360|360] "RPM" Vector__XXX
+
+BO_ 2147484033 TPDO1_Traction: 8 Vector__XXX
+ SG_ RightMotorCurrent : 32|32@1- (1,0) [-1|40] "Amps" Vector__XXX
+ SG_ LeftMotorCurrent : 0|32@1- (1,0) [-1|40] "Amps" Vector__XXX
+
+BO_ 2147484929 RPDO4_Traction: 1 Vector__XXX
+ SG_ ControllerFaultFlag : 1|1@1- (1,0) [0|1] "" Vector__XXX
+ SG_ MotorBrakes : 0|1@1- (1,0) [0|1] "" Vector__XXX
+
+BO_ 2147484161 RPDO1_Traction: 8 Vector__XXX
+ SG_ RightMotorSpeedCommand : 32|32@1- (3.333,0) [-300|300] "RPM" Vector__XXX
+ SG_ LeftMotorSpeedCommand : 0|32@1- (3.333,0) [-300|300] "RPM" Vector__XXX
+
+
+
+BA_DEF_  "BusType" STRING ;
+BA_DEF_DEF_  "BusType" "CAN";
+
